@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SampleRevitAddin.Common", "SampleRevitAddin.Common\SampleRevitAddin.Common.shproj", "{C5D23E10-C3AF-4AC2-8F80-9D4482D274B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRevitAddin.2020", "SampleRevitAddin.2020\SampleRevitAddin.2020.csproj", "{07583564-AFC9-49D3-B859-21ED8C65344E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRevitAddin.2021", "SampleRevitAddin.2021\SampleRevitAddin.2021.csproj", "{8DF231C1-4AF1-4BE2-A713-FC8E97951500}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRevitAddin.2022", "SampleRevitAddin.2022\SampleRevitAddin.2022.csproj", "{AC17C4BE-A7E7-4135-B970-9C5C133CB875}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRevitAddin.2023", "SampleRevitAddin.2023\SampleRevitAddin.2023.csproj", "{963B5AB4-BEDA-499E-896F-9FB61FDCC96D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRevitAddin.Installer", "SampleRevitAddin.Installer\SampleRevitAddin.Installer.csproj", "{54B60FF5-0884-44B9-B25E-C7CD34DEDE3E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07583564-AFC9-49D3-B859-21ED8C65344E} = {07583564-AFC9-49D3-B859-21ED8C65344E}
+		{8DF231C1-4AF1-4BE2-A713-FC8E97951500} = {8DF231C1-4AF1-4BE2-A713-FC8E97951500}
+		{963B5AB4-BEDA-499E-896F-9FB61FDCC96D} = {963B5AB4-BEDA-499E-896F-9FB61FDCC96D}
+		{AC17C4BE-A7E7-4135-B970-9C5C133CB875} = {AC17C4BE-A7E7-4135-B970-9C5C133CB875}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRevitAddin.Resources", "SampleRevitAddin.Resources\SampleRevitAddin.Resources.csproj", "{87317C2B-AF3A-40AD-865C-093FBAA72440}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07583564-AFC9-49D3-B859-21ED8C65344E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07583564-AFC9-49D3-B859-21ED8C65344E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07583564-AFC9-49D3-B859-21ED8C65344E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07583564-AFC9-49D3-B859-21ED8C65344E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF231C1-4AF1-4BE2-A713-FC8E97951500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF231C1-4AF1-4BE2-A713-FC8E97951500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF231C1-4AF1-4BE2-A713-FC8E97951500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF231C1-4AF1-4BE2-A713-FC8E97951500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC17C4BE-A7E7-4135-B970-9C5C133CB875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC17C4BE-A7E7-4135-B970-9C5C133CB875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC17C4BE-A7E7-4135-B970-9C5C133CB875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC17C4BE-A7E7-4135-B970-9C5C133CB875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{963B5AB4-BEDA-499E-896F-9FB61FDCC96D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{963B5AB4-BEDA-499E-896F-9FB61FDCC96D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{963B5AB4-BEDA-499E-896F-9FB61FDCC96D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{963B5AB4-BEDA-499E-896F-9FB61FDCC96D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B60FF5-0884-44B9-B25E-C7CD34DEDE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B60FF5-0884-44B9-B25E-C7CD34DEDE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B60FF5-0884-44B9-B25E-C7CD34DEDE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B60FF5-0884-44B9-B25E-C7CD34DEDE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87317C2B-AF3A-40AD-865C-093FBAA72440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87317C2B-AF3A-40AD-865C-093FBAA72440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87317C2B-AF3A-40AD-865C-093FBAA72440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87317C2B-AF3A-40AD-865C-093FBAA72440}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {299B59F9-B84B-4547-8B40-346A6B4012AF}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SampleRevitAddin.Common\SampleRevitAddin.Common.projitems*{07583564-afc9-49d3-b859-21ed8c65344e}*SharedItemsImports = 4
+		SampleRevitAddin.Common\SampleRevitAddin.Common.projitems*{8df231c1-4af1-4be2-a713-fc8e97951500}*SharedItemsImports = 4
+		SampleRevitAddin.Common\SampleRevitAddin.Common.projitems*{963b5ab4-beda-499e-896f-9fb61fdcc96d}*SharedItemsImports = 4
+		SampleRevitAddin.Common\SampleRevitAddin.Common.projitems*{ac17c4be-a7e7-4135-b970-9c5c133cb875}*SharedItemsImports = 4
+		SampleRevitAddin.Common\SampleRevitAddin.Common.projitems*{c5d23e10-c3af-4ac2-8f80-9d4482d274b0}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

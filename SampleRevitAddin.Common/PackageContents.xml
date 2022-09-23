@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0"
+	ProductType="Application"
+	Name="SampleRevitAddin"
+	AppVersion="0.1.0"
+    Description="Sample Revit Addin"
+    SupportedLocales="Enu"
+    Author="e-verse"
+    AutodeskProduct="Revit"
+    FriendlyVersion="0.1.0"
+    AppNameSpace="appstore.exchange.autodesk.com">
+
+	<CompanyDetails Name="e-verse" />
+
+	<RuntimeRequirements OS="Win32|Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2020" />
+
+	<Components Description="2020 parts">
+		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2020" />
+		<ComponentEntry AppName="SampleRevitAddin" Version="0.1.0" ModuleName="./Contents/2020/SampleRevitAddin.addin" AppDescription="Sample Revit Addin" />
+	</Components>
+
+	<Components Description="2021 parts">
+		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2021" SeriesMax="R2021" />
+		<ComponentEntry AppName="SampleRevitAddin" Version="0.1.0" ModuleName="./Contents/2021/SampleRevitAddin.addin" AppDescription="Sample Revit Addin" />
+	</Components>
+
+	<Components Description="2022 parts">
+		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2022" SeriesMax="R2022" />
+		<ComponentEntry AppName="SampleRevitAddin" Version="0.1.0" ModuleName="./Contents/2021/SampleRevitAddin.addin" AppDescription="Sample Revit Addin" />
+	</Components>
+
+  <Components Description="2023 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2023" SeriesMax="R2023" />
+    <ComponentEntry AppName="SampleRevitAddin" Version="0.1.0" ModuleName="./Contents/2023/SampleRevitAddin.addin" AppDescription="Sample Revit Addin" />
+  </Components>
+</ApplicationPackage>
