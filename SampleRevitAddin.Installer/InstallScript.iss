@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "SampleRevitAddin"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.0.0"
 #define MyAppPublisher "e-verse"
 
 [Setup]
@@ -12,19 +12,17 @@ AppId={{264AD411-643C-43AC-9F07-34523C752100}
 AppName={#MyAppName}
 #define installerPath "{commonpf64}\e-verse\Snacks\"
 AppVersion={#MyAppVersion}
-;AppVerName={#MyAppName} {#MyAppVersion}
+AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisher={#MyAppPublisher}
 DefaultDirName={#installerPath}
 DisableDirPage=yes
 DefaultGroupName=Revit Extractor
 DisableProgramGroupPage=yes
 
-
 #define Revit2020 "\Autodesk\ApplicationPlugins\SampleRevitAddin.bundle\Contents\2020\"
 #define Revit2021 "\Autodesk\ApplicationPlugins\SampleRevitAddin.bundle\Contents\2021\"
 #define Revit2022 "\Autodesk\ApplicationPlugins\SampleRevitAddin.bundle\Contents\2022\"
 #define Revit2023 "\Autodesk\ApplicationPlugins\SampleRevitAddin.bundle\Contents\2023\"
-
 
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
@@ -32,13 +30,20 @@ OutputDir=.\Output
 OutputBaseFilename=SampleRevitAddin
 Compression=lzma
 SolidCompression=yes
+SetupIconFile="..\SampleRevitAddin.Resources\Images\Icons\e-verselogo.ico"
+OutputManifestFile=Setup-Manifest.txt
+UninstallDisplayName="SampleRevitAddin Uninstall"
+UninstallDisplayIcon="..\SampleRevitAddin.Resources\Images\Icons\e-verselogo.ico"
+WizardSmallImageFile="..\SampleRevitAddin.Resources\Images\Icons\e-verselogo.bmp"
 WizardStyle=modern
 
 [Languages]
-Name: "english"; MessagesFile: "compiler:Default.isl"
+Name: "english"; MessagesFile: "compiler:Default.isl"; LicenseFile: "..\SampleRevitAddin.Resources\Files\Text\license.txt"
+
+[Messages]
+SetupWindowTitle =  Setup {#SetupSetting("AppName")} Version: {#SetupSetting("AppVersion")}
 
 [Files]
-
 
 Source: "..\SampleRevitAddin.2020\bin\Release\*"; DestDir: "{userappdata}{#Revit2020}\"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\SampleRevitAddin.Common\SampleRevitAddin.addin"; DestDir: "{userappdata}{#Revit2020}\"; Flags: ignoreversion recursesubdirs createallsubdirs
