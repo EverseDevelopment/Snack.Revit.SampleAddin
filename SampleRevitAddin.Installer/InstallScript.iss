@@ -38,7 +38,7 @@ WizardSmallImageFile="..\SampleRevitAddin.Resources\Images\Icons\e-verselogo.bmp
 WizardStyle=modern
 
 [Languages]
-Name: "english"; MessagesFile: "compiler:Default.isl"; LicenseFile: "..\SampleRevitAddin.Resources\Files\Text\license.txt"
+Name: "english"; MessagesFile: "compiler:Default.isl"; LicenseFile: "..\LICENSE"
 
 [Messages]
 SetupWindowTitle =  Setup {#SetupSetting("AppName")} Version: {#SetupSetting("AppVersion")}

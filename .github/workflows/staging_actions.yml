@@ -51,6 +51,10 @@ jobs:
       - name: Restore nuGet packages
         run: nuget restore $env:Solution_Name 
 
+      # Update the version inside of the .iss file
+      - name: Updating the version into the installer
+        run: (Get-Content SampleRevitAddin.Installer/InstallScript.iss) -replace 'MyAppVersion "1.0.0"', 'MyAppVersion "v${{ steps.gitversion.outputs.majorMinorPatch }}"' | Out-File -encoding ASCII SampleRevitAddin.Installer/InstallScript.iss
+
       - name: Run MSBuild
         id: run-msbuild
         run: |
