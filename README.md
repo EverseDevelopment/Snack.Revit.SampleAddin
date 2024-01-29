@@ -1,6 +1,6 @@
 # Sample Revit Addin
 
-[<img src="https://s3.amazonaws.com/everse.assets/1615118873701.jpeg">](https://github.com/EverseDevelopment/Snack.Revit.SampleAddin/wiki)
+[<img src="https://s3.amazonaws.com/everse.assets/GithubReadme/SnackRevitSampleAddin.jpeg">](https://github.com/EverseDevelopment/Snack.Revit.SampleAddin/wiki)
 <br/>
 
 ## The Path
@@ -35,6 +35,6 @@ We are an international mix of AEC professionals, product designers, and softwar
 
 <p align="center" width="100%">
     <a href="https://www.e-verse.com/">
-    <img src="https://s3.amazonaws.com/everse.assets/e-verse_logo_no+slogan.jpg" width="732" height="271" align="center">
+    <img src="https://s3.amazonaws.com/everse.assets/GithubReadme/e-verse_logo_no+slogan.jpg" align="center">
     </a>
 </p>
