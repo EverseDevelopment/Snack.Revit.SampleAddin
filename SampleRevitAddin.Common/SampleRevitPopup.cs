@@ -13,12 +13,12 @@ namespace SampleRevitAddin.Common
         {
             try
             {
-                TaskDialog.Show("e-verse Sample Addin", "Looks like this worked!");
+                Autodesk.Revit.UI.TaskDialog.Show("e-verse Sample Addin", "Looks like this worked!");
                 return Result.Succeeded;
             }
             catch (Exception e)
             {
-                TaskDialog.Show("e-verse Sample Addin", $"Exception found: {e.Message}");
+                Autodesk.Revit.UI.TaskDialog.Show("e-verse Sample Addin", $"Exception found: {e.Message}");
                 return Result.Failed;
             }
         }

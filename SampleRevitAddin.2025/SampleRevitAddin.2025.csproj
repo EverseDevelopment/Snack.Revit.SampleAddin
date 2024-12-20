@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	<OutputType>Library</OutputType>
+	<TargetFramework>net8.0-windows</TargetFramework>
+	<UseWindowsForms>true</UseWindowsForms>
+	<UseWPF>true</UseWPF>
+	<Nullable>enable</Nullable>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<RootNamespace>SampleRevitAddin._2025</RootNamespace>
+    <AssemblyName>SampleRevitAddin</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleRevitAddin.Resources\SampleRevitAddin.Resources.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2025.0.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AssemblyTitle>SampleRevitAddin.2025</AssemblyTitle>
+    <Product>SampleRevitAddin.2025</Product>
+    <Copyright>Copyright ©  2022</Copyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if $(ConfigurationName) == Debug copy /Y &quot;$(TargetDir)&quot; &quot;$(AppData)\Autodesk\Revit\Addins\2025\&quot;" />
+  </Target>
+  <Import Project="..\SampleRevitAddin.Common\SampleRevitAddin.Common.projitems" Label="Shared" />
+</Project>
