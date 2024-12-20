@@ -23,6 +23,8 @@ DisableProgramGroupPage=yes
 #define Revit2021 "\Autodesk\ApplicationPlugins\SampleRevitAddin.bundle\Contents\2021\"
 #define Revit2022 "\Autodesk\ApplicationPlugins\SampleRevitAddin.bundle\Contents\2022\"
 #define Revit2023 "\Autodesk\ApplicationPlugins\SampleRevitAddin.bundle\Contents\2023\"
+#define Revit2024 "\Autodesk\ApplicationPlugins\SampleRevitAddin.bundle\Contents\2024\"
+#define Revit2025 "\Autodesk\ApplicationPlugins\SampleRevitAddin.bundle\Contents\2025\"
 
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
@@ -56,7 +58,13 @@ Source: "..\SampleRevitAddin.2022\bin\Release\*"; DestDir: "{userappdata}{#Revit
 Source: "..\SampleRevitAddin.Common\SampleRevitAddin.addin"; DestDir: "{userappdata}{#Revit2022}\"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 Source: "..\SampleRevitAddin.2023\bin\Release\*"; DestDir: "{userappdata}{#Revit2023}\"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "..\SampleRevitAddin.Common\SampleRevitAddin.addin"; DestDir: "{userappdata}{#Revit2022}\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\SampleRevitAddin.Common\SampleRevitAddin.addin"; DestDir: "{userappdata}{#Revit2023}\"; Flags: ignoreversion recursesubdirs createallsubdirs
+
+Source: "..\SampleRevitAddin.2024\bin\Release\*"; DestDir: "{userappdata}{#Revit2024}\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\SampleRevitAddin.Common\SampleRevitAddin.addin"; DestDir: "{userappdata}{#Revit2024}\"; Flags: ignoreversion recursesubdirs createallsubdirs
+
+Source: "..\SampleRevitAddin.2025\bin\Release\*"; DestDir: "{userappdata}{#Revit2025}\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\SampleRevitAddin.Common\SampleRevitAddin.addin"; DestDir: "{userappdata}{#Revit2025}\"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 Source: "..\SampleRevitAddin.Common\PackageContents.xml"; DestDir: "{userappdata}\Autodesk\ApplicationPlugins\SampleRevitAddin.bundle\"; Flags: ignoreversion
 
