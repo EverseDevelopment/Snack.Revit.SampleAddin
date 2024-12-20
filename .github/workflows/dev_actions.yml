@@ -14,21 +14,20 @@ on:
 
 jobs:
   Build:
-    # The type of runner that the job will run on
     runs-on: windows-latest
-    env:
-        Solution_Name: SampleRevitAddin.sln
-    outputs:
-      Version: ${{ steps.gitversion.outputs.nuGetVersionV2 }} 
-      CommitsSinceVersionSource: ${{ steps.gitversion.outputs.CommitsSinceVersionSource }}   
-      
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      
-       # install and calculate the new version with GitVersion  
+
+      # Install .NET Core 3.1 SDK
+      - name: Install .NET Core 3.1 SDK
+        run: |
+          wget https://download.visualstudio.microsoft.com/download/pr/7987e2b2-15c9-4c3d-b9b3-d372fc4d8caa/3fa02be2e8c8712649819e283a2294a7/dotnet-sdk-3.1.416-win-x64.exe
+          ./dotnet-sdk-3.1.416-win-x64.exe /quiet
+
+      # Install GitVersion
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@v0.9.7
         with:
@@ -39,6 +38,7 @@ jobs:
         with:
           useConfigFile: true
           configFilePath: GitVersion.yml
+        id: gitversion
         
         id: gitversion # step id used as reference for output values
       - name: Display GitVersion outputs
